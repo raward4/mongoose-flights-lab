@@ -2,12 +2,12 @@ import mongoose from "mongoose"
 
 const Schema = mongoose.Schema
 
-const performerSchema = new Schema({
+const mealSchema = new Schema({
   name: {type: String, required: true, unique: true}
 })
 
-const Performer = mongoose.model("Performer", performerSchema)
+const Meal = mongoose.model('Meal', mealSchema)
 
 export {
-  Performer
+  Meal
 }
